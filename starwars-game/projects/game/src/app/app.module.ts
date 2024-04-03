@@ -22,6 +22,6 @@ import { SideBarComponent } from './shared/components/side-bar/side-bar.componen
     GameModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, SideBarComponent]
+  bootstrap: [AppComponent, HeaderComponent, SideBarComponent] // disparait après angular 14 pour de nouveaux projets
 })
 export class AppModule { }
