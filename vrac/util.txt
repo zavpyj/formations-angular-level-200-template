@@ -1,0 +1,3 @@
+ng new workspace-test --directory learnings/workspace-test --create-application=false
+cd learnings/workspace-test; ng g app mon-appli
+ng g lib ma-lib
