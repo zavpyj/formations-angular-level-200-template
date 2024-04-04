@@ -24,10 +24,10 @@ export class StatsService {
   ];
   private obs$ = new Observable<StatDto[]>(observer => {
     console.info('=> Appel du service de statistiques...');
-    setTimeout(() => {
+    //setTimeout(() => {
       observer.next(this.stats);
       observer.complete();
-    }, 2000);
+    //}, 2000);
   })/*.pipe(
     shareReplay(1)
   )*/;
