@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GameListComponent } from './features/game/game-list/game-list.component';
 import { NewOneComponent } from './features/game/new-one/new-one.component';
-import { StatsComponent } from './features/game/stats/stats.component';
+import { StatsContainerComponent } from './features/game/stats-container/stats-container.component';
 
 const routes: Routes = [{
   path: 'games',
@@ -14,7 +14,7 @@ const routes: Routes = [{
 },
 {
   path: 'stats',
-  component: StatsComponent
+  component: StatsContainerComponent
 }];
 
 @NgModule({
