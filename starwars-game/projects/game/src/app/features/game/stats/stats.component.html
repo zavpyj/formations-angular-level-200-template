@@ -1,1 +1,19 @@
-<p>stats works!</p>
+<h1>Statistiques</h1>
+<table *ngIf="stats$ | async as stats">
+  <thead>
+    <tr>
+      <th>Année</th>
+      <th>Mois</th>
+      <th>Parties gagnées</th>
+      <th>Parties perdues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stat of stats">
+      <td>{{stat.annee}}</td>
+      <td>{{stat.mois | number: '2.0'}}</td>
+      <td>{{stat.nbPartiesGagnees}}</td>
+      <td>{{stat.nbPartiesPerdues}}</td>
+    </tr>
+  </tbody>
+</table>
