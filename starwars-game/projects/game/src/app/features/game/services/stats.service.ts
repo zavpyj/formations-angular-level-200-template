@@ -27,7 +27,7 @@ export class StatsService {
     setTimeout(() => {
       observer.next(this.stats);
       observer.complete();
-    }, 0);
+    }, 2000);
   })/*.pipe(
     shareReplay(1)
   )*/;
