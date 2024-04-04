@@ -1,0 +1,36 @@
+ng new workspace-test --directory learnings/workspace-test --create-application=false
+cd learnings/workspace-test; ng g app mon-appli
+ng g lib ma-lib
+
+
+
+Notes:
+ - Tree shaking avec SCM & standalone
+ - Supprimer SharedModule
+ - Réduire Budget ("type": "initial", "maximumWarning": "500kb","maximumError": "1mb") => Très grosses applis 2Mo max !
+    - comment faire un SCAM (et pas standalone=true) : HeaderComponent & HeaderModule
+
+app.module.ts : bootstrap sert juste pour les balises utilisées directement dans index.html root. Mais app.module.ts disparait en Angular 17.
+
+workspace
+tsc
+
+04/04/2024
+Observable
+ ch subscribe rééxécute entièrement la fonction
+ sharereplay : mise en cache
+ behaviourSubject
+ fermer Observable avec complete
+ http.get le fait automatiquement
+ 
+ Thin component - Fonctions pures
+ Angular Service
+ Angular File
+ John papa
+ 
+ voir comment pensez service plutot que composant : youtube evan
+
+
+TDD RGR - Red Green Refactor
+
+@injectable provided in root
