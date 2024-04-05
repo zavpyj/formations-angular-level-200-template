@@ -22,7 +22,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <game-table [games]="games"></game-table>
+              <game-table [games]="games$ | async"></game-table>
             </div>
           </div>
         </div>
