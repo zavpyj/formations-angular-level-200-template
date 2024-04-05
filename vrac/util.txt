@@ -34,3 +34,5 @@ Observable
 TDD RGR - Red Green Refactor
 
 @injectable provided in root
+Tests : comment faire des assertions sur traitements asynchrones
+"| async" et subscribe implicite
