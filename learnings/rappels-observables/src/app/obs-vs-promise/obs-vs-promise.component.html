@@ -1,8 +1,5 @@
-<ng-container *ngIf="titreChangeant$ | async as titre">
-  <h1>{{ titre}}</h1>
-</ng-container>
-
-<ng-container *ngIf="titreChangeant$ | async as titre">
-  <h2>{{ titre}}</h2>
-</ng-container>
-
+<div *ngFor="let i of [].constructor(5)">
+  <ng-container *ngIf="titreChangeant$ | async as titre">
+    <h1>{{ titre}}</h1>
+  </ng-container>
+  </div>
